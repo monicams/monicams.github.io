@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Monica Messaggi Kaya - on Github</title>
+		<meta name="description" content="profile page on Github" />
+		<meta name="keywords" content="placeholder,  portfolio" />
+		<meta name="author" content="Monica Messaggi Kaya" />
+		<link rel="shortcut icon" href="favicon.ico"> 
+		<style>
+			@import url(http://fonts.googleapis.com/css?family=Lato:900,700);
+			*, *:before, *:after{
+			  box-sizing:border-box;
+			}
+			body{
+			  font-family: 'Lato', sans-serif;
+			  text-align: center;
+			}
+			p{color:#00B4F1;}
+			a{color: #e7038a; text-decoration:none;}
+			a:hover{text-decoration:underline;}
+			div.initials{
+			  width: 90%;
+			  margin: 0 auto;
+			  text-align: center;
+			}
+			.letter{
+			  display: inline-block;
+			  font-weight: 900;
+			  font-size: 8em;
+			  margin: 0.2em;
+			  position: relative;
+			  color: #00B4F1;
+			  transform-style: preserve-3d;
+			  perspective: 400;
+			  z-index: 1;
+			}
+			.pink{color: #e7038a;}
+
+			.letter:before, .letter:after{
+			  position:absolute;
+			  content: attr(data-letter);
+			  transform-origin: top left;
+			  top:0;
+			  left:0;
+			}
+			.letter, .letter:before, .letter:after{
+			  transition: all 0.3s ease-in-out;
+			}
+			.letter:before{
+			  color: #fff;
+			  text-shadow: 
+			    -1px 0px 1px rgba(255,255,255,.8),
+			    1px 0px 1px rgba(0,0,0,.8);
+			  z-index: 3;
+			  transform:
+			    rotateX(0deg)
+			    rotateY(-15deg)
+			    rotateZ(0deg);
+			}
+			.letter:after{
+			  color: rgba(0,0,0,.11);
+			  z-index:2;
+			  transform:
+			    scale(1.08,1)
+			    rotateX(0deg)
+			    rotateY(0deg)
+			    rotateZ(0deg)
+			    skew(0deg,1deg);
+			}
+			.letter:hover:before{
+			  color: #fafafa;
+			  transform:
+			    rotateX(0deg)
+			    rotateY(-40deg)
+			    rotateZ(0deg);
+			}
+			.letter:hover:after{
+			  transform:
+			    scale(1.08,1)
+			    rotateX(0deg)
+			    rotateY(40deg)
+			    rotateZ(0deg)
+			    skew(0deg,22deg);
+			}
+		</style>
+	</head>
+	<body>
+	<div class="initials">
+	  <span class="letter" data-letter="M">M</span>
+	  <span class="letter pink" data-letter="M">M</span>
+	  <span class="letter" data-letter="K">K</span>	 
+	</div>
+	<p>Monica Messaggi Kaya</p>
+	<p><a href="http://monicams.com">monicams.com</a> - 
+	<a href="http://github.com/monicams">Github</a>	</p>
+	</body>
+</html>
